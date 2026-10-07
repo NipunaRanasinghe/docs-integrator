@@ -16,11 +16,11 @@ import TabItem from '@theme/TabItem';
 
 Editor debugging lets you pause an integration mid-run and inspect the values flowing through it. This page covers everything from the everyday quick start (set a breakpoint and launch a debug session) through the full set of features available once a session is running: stepping, inspection panels, advanced breakpoints, and test or remote debugging.
 
-## Before you start
-
+:::info Prerequisites
 - Open the integration project in WSO2 Integrator.
 - Confirm the integration has an executable entry point, such as a service or an automation.
 - Open the **Problems** panel at the bottom of the editor and make sure the workspace is free of compile errors.
+:::
 
 <ThemedImage
     alt="Problems panel showing a clean workspace"
@@ -177,7 +177,7 @@ Use the **Watch** panel to track specific expressions across breakpoints. Add an
 - `response.statusCode`. Check the current HTTP status.
 
 <ThemedImage
-    alt="Watch panel evaluating expressions during a paused session"
+    alt="Watch panel with an input field for adding an expression"
     sources={{
         light: useBaseUrl('/img/develop/troubleshooting/debugging-features/watch-panel.png'),
         dark: useBaseUrl('/img/develop/troubleshooting/debugging-features/watch-panel.png'),
