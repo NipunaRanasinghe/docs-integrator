@@ -243,7 +243,24 @@ bal run --debug <port> <jar>      # executable JAR
 bal test --debug <port> <path>    # tests
 ```
 
-Then add a **Ballerina Remote** configuration to `launch.json` with the `debuggeeHost` and `debuggeePort` matching the running process, and click **Start Debugging**. The same breakpoints, stepping, and inspection features work against the remote process.
+Then add a **Ballerina Remote** configuration to `launch.json`. Set `debuggeeHost` to the host of the running process and `debuggeePort` to the port you passed to `--debug`:
+
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Ballerina Remote",
+            "type": "ballerina",
+            "request": "attach",
+            "debuggeeHost": "127.0.0.1",
+            "debuggeePort": "5005"
+        }
+    ]
+}
+```
+
+Select **Ballerina Remote** in the **Run and Debug** view and click **Start Debugging**. The same breakpoints, stepping, and inspection features work against the remote process.
 
 ## What's Next
 
