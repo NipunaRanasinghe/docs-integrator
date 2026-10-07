@@ -1,6 +1,6 @@
 ---
 sidebar_position: 0
-sidebar_label: Debug Your Intgeration
+sidebar_label: Debug Your Integration
 title: Debug Your Integration
 description: Set breakpoints, step through code, and inspect program state in a WSO2 Integrator debug session, including test and remote debugging.
 keywords: [wso2 integrator, editor debugging, breakpoints, debug session, remote debugging, test debugging, stepping, watch panel, debug console, expression evaluation]
@@ -137,7 +137,7 @@ Once execution is paused, the debug toolbar appears at the top of the editor. Us
 | Action | Shortcut | What it does |
 |--------|----------|--------------|
 | Continue | F5 | Resume execution until the next breakpoint. |
-| Pause | Shift+F5 | Suspend a running program at its current line. |
+| Pause | F6 | Suspend a running program at its current line. |
 | Step Over | F10 | Run the current line and pause on the next one, without entering function calls. |
 | Step Into | F11 | Enter the function called on the current line. |
 | Step Out | Shift+F11 | Run the rest of the current function and pause when it returns. |
@@ -247,7 +247,6 @@ Then add a **Ballerina Remote** configuration to `launch.json` with the `debugge
 
 ## What's Next
 
-- [Logging](../troubleshooting/logging.md) - add a persistent record instead of a live debug session.
-- [Errors and stack traces](../troubleshooting/errors-and-stack-traces.md) - read the error output when you cannot attach a debugger.
-- [Developer Tools](../developer-tools/developer-tools.md) - quick-start setup for a debug session.
-- [Async API Tool](../developer-tools/integration-tools/asyncapi-tool.md) - quick-start setup for a debug session.
+- [Logging](../troubleshooting/logging.md) — add a persistent record instead of a live debug session.
+- [Errors and stack traces](../troubleshooting/errors-and-stack-traces.md) — read the error output when you cannot attach a debugger.
+- [Test Your Integration](../test/test.md) — write tests that catch issues before you need to debug them.
