@@ -243,7 +243,23 @@ bal run --debug <port> <jar>      # executable JAR
 bal test --debug <port> <path>    # tests
 ```
 
-Then add a **Ballerina Remote** configuration to `launch.json`. Set `debuggeeHost` to the host of the running process and `debuggeePort` to the port you passed to `--debug`:
+Then attach the editor to the running process:
+
+1. Open the **Run and Debug** view from the [activity bar](../../editor/editor-window.md#activity-bar).
+2. Select **Ballerina Remote** from the configuration dropdown.
+3. Click **Start Debugging**.
+
+<ThemedImage
+    alt="Run and Debug configuration dropdown with Ballerina Remote selected"
+    sources={{
+        light: useBaseUrl('/img/develop/troubleshooting/editor-debugging/remote-debug-config.png'),
+        dark: useBaseUrl('/img/develop/troubleshooting/editor-debugging/remote-debug-config.png'),
+    }}
+/>
+
+The same breakpoints, stepping, and inspection features work against the remote process.
+
+The default **Ballerina Remote** configuration attaches to `127.0.0.1` on port `5005`. To attach to another host or port, edit `debuggeeHost` and `debuggeePort` in `.vscode/launch.json` to match the host of the running process and the port you passed to `--debug`. If **Ballerina Remote** is missing from the dropdown, add it to `.vscode/launch.json`:
 
 ```json
 {
@@ -259,8 +275,6 @@ Then add a **Ballerina Remote** configuration to `launch.json`. Set `debuggeeHos
     ]
 }
 ```
-
-Select **Ballerina Remote** in the **Run and Debug** view and click **Start Debugging**. The same breakpoints, stepping, and inspection features work against the remote process.
 
 ## What's Next
 
