@@ -85,7 +85,7 @@ A conditional breakpoint pauses only when a Ballerina expression evaluates to `t
 3. Enter a condition, for example `order.total > 1000` or `customer.tier == "premium"`.
 
 <ThemedImage
-    alt="Editing a breakpoint to add a hit condition"
+    alt="Editing a breakpoint to add an expression condition"
     sources={{
         light: useBaseUrl('/img/develop/troubleshooting/debugging-features/expression.png'),
         dark: useBaseUrl('/img/develop/troubleshooting/debugging-features/expression.png'),
@@ -127,7 +127,7 @@ Execution pauses at the first breakpoint it hits. Output streams to the **Debug 
 Once execution is paused, the debug toolbar appears at the top of the editor. Use it to move through the integration one step at a time.
 
 <ThemedImage
-    alt="Debug toolbar with continue, pause, step over, step into, step out, restart, and stop controls"
+    alt="Debug toolbar with continue, step over, step into, step out, restart, and stop controls"
     sources={{
         light: useBaseUrl('/img/develop/troubleshooting/debugging-features/debug-toolbar.png'),
         dark: useBaseUrl('/img/develop/troubleshooting/debugging-features/debug-toolbar.png'),
